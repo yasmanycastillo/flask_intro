@@ -1,0 +1,23 @@
+{
+  "name": "flask_intro",
+  "authors": [
+    "Yasmany <yasmany003@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.py",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
