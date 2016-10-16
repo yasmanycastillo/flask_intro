@@ -18,11 +18,19 @@ main_css = Bundle(
 )
 
 custom_css = Bundle(
+    'css/ltestyle.min.css',
     'css/custom.css',
     filters='cssmin',
     output='css/custom.min.css'
 )
 
+fonts = Bundle(
+    'libs/bootstrap/fonts/*',
+    'libs/font-awesome/fonts/*',
+    output='fonts/'
+)
+
 assets.register('main_js', main_js)
 assets.register('main_css', main_css)
 assets.register('css', custom_css)
+assets.register('fonts', fonts)

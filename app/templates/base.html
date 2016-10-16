@@ -6,6 +6,9 @@
     {% assets "main_css" %}
         <link rel="stylesheet" href="{{ ASSET_URL }}">
     {% endassets %}
+    {% assets "css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
 </head>
 <body>
     <nav class="navbar navbar-inverse" role="navigation">
@@ -17,7 +20,7 @@
     			<span class="icon-bar"></span>
     			<span class="icon-bar"></span>
     		</button>
-    		<a class="navbar-brand" href="#">{% block module_name %}{% endblock %}</a>
+    		<a class="navbar-brand" href="#">{% block module_name %}{% endblock %} <i class="fa fa-android"></i> </a>
     	</div>
 
     	<!-- Collect the nav links, forms, and other content for toggling -->

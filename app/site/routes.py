@@ -1,12 +1,13 @@
 # -*- encoding:utf-8 -*-
 from flask import Blueprint, render_template
 
-site = Blueprint('site', __name__)
+site = Blueprint('site', __name__)  # Create the blueprint for this module
 
 
-@site.route("/")
+# Make the first entry route
+@site.route('/')
 def index():
     """
-    Pagina de inicio
+    Index site page.
     """
     return render_template("site/index.html")

@@ -4,13 +4,15 @@ from flask_sqlalchemy import SQLAlchemy
 from .assets import assets
 from .config import Config
 
-# Defino el nombre de mi app principal
+# Creating the app entry point
 app = Flask(__name__, static_folder='static')
 app.config.from_object(Config)
+
+# Initializing other functions
 assets.init_app(app)
-# Defino mi cursor de la base de datos
 db = SQLAlchemy(app)
 
+# import our blueprints and register them
 from .site.routes import site
 from .admin.routes import mod
 
