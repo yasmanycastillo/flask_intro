@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 from flask import Blueprint, render_template
 
-mod = Blueprint('admin', __name__) # Create the blueprint for this module
+mod = Blueprint('admin', __name__)  # Create the blueprint for this module
 
 
 @mod.route("/")
